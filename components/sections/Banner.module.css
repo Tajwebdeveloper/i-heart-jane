@@ -1,0 +1,59 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 300px;
+  padding-bottom: 150px;
+}
+.banner__image {
+  display: flex;
+  justify-content: center;
+  margin-top: 98px;
+}
+.banner__content {
+  padding: 24px 24px 0;
+}
+.banner__content h1 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.circle {
+  border-radius: 50%;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  z-index: -1;
+}
+.circle__purple {
+  background: #8e00e5;
+  top: 2%;
+  right: -20%;
+}
+.circle__red {
+  background: #ff5500;
+  width: 1262px;
+  height: 1262px;
+  top: 50%;
+  left: -60%;
+}
+.circle__maroon {
+  background: #ce349a;
+  top: 30%;
+  left: -10%;
+}
+
+.heart__icon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+  margin-top: 100px;
+}
+.heart__icon img {
+  margin-top: -50px;
+}
