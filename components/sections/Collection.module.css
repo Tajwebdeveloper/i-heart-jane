@@ -1,0 +1,16 @@
+.collection{
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+
+
+.product__slide{
+  width: 100%;
+  overflow: hidden;
+}
+.product__slide .swiper-wrapper{
+  padding: 0 24px;
+}
+.product__item{
+  width: 156px;
+}

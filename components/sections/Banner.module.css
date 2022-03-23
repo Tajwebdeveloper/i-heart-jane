@@ -1,7 +1,6 @@
 .banner {
   position: relative;
   overflow: hidden;
-  margin-bottom: 300px;
   padding-bottom: 150px;
 }
 .banner__image {

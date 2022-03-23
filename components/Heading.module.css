@@ -1,0 +1,18 @@
+.heading{
+  font-weight: 600;
+  font-size: 40px;
+  margin:0;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+.primary span{
+  color: #5E1FF0;
+}
+.secondary{
+  color: #dfd2fc;
+}
+
+.secondary span{
+  color: white;
+}

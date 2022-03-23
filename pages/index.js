@@ -1,4 +1,4 @@
-import { Header, Banner, Footer, Features } from "../components/sections/index";
+import { Header, Banner, Footer, Features, Effects, Products, Collection, Reviews, Ratings, Brands, Love } from "../components/sections/index";
 
 const IndexPage = () => {
   return (
@@ -6,8 +6,14 @@ const IndexPage = () => {
       <Header />
       <Banner />
       <Features />
+      <Effects />
+      <Products />
+      <Collection />
+      {/*<Reviews />
+      <Ratings />
+      <Brands />
+      <Love /> */}
       <Footer />
-      adsfds
     </div>
   );
 };

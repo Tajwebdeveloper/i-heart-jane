@@ -8,18 +8,18 @@ const Icon = ({ icon, text }) => {
   useEffect(() => {
     gsap.from(card.current, {
       scale: 0,
-      delay: 0.1,
+      delay: 0.2,
       scrollTrigger: {
         trigger: card.current
       }
-    });
+    }).duration(0.5);
   });
   return (
     <div ref={card} className={styles.card}>
       <div className={styles.icon}>
         <img src={`/icons/${icon}.svg`} alt="" />
       </div>
-      <div className={styles.content}>{text}</div>
+      <div className={styles.text}>{text}</div>
     </div>
   );
 };

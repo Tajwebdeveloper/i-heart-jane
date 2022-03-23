@@ -1,0 +1,12 @@
+.card{
+  position: relative;
+}
+.icon{
+  position: absolute;
+}
+.left{
+  margin-right: auto;
+}
+.right{
+  margin-left: auto;
+}

@@ -17,13 +17,13 @@ const Header = () => {
           start: 150,
 
           onEnter: () => {
-            header.current.classList.add("has__shadow");
+            header.current?.classList.add("has__shadow");
             gsap.to(headerButton.current, {
               opacity: 1
             });
           },
           onEnterBack: () => {
-            header.current.classList.remove("has__shadow");
+            header.current?.classList.remove("has__shadow");
             gsap.to(headerButton.current, {
               opacity: 0
             });

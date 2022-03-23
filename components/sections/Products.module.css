@@ -1,0 +1,19 @@
+.product__row{
+  display: flex;
+  gap: 16px;
+  padding:8px;
+}
+.product__scroll{
+  width:100%;
+  overflow: hidden;
+}
+.product__row img{
+  flex-shrink: 0;
+  width: 156px;
+  height: 156px;
+}
+.heading{
+  background-color: #8E00E6;
+  padding: 48px 24px;
+  margin:8px 0;
+}
