@@ -15,7 +15,7 @@ const Header = () => {
         scrollTrigger: {
           trigger: headerButton.current,
           start: 150,
-
+          lazy: false,
           onEnter: () => {
             header.current?.classList.add("has__shadow");
             gsap.to(headerButton.current, {

@@ -29,7 +29,8 @@ const Banner = () => {
         trigger: banner.current,
         scrub: true,
         start: bannerImage.current.offsetTop
-      }
+      },
+      lazy: false
     });
     // gsap.from(bannerImage.current, {
     //   scrollTrigger: {
@@ -46,7 +47,8 @@ const Banner = () => {
         trigger: banner.current,
         start: 50,
         scrub: true
-      }
+      },
+      lazy: false
     });
     gsap.from(circleMaroon.current, {
       translateY: 100,
@@ -54,7 +56,8 @@ const Banner = () => {
         trigger: banner.current,
         start: 300,
         scrub: true
-      }
+      },
+      lazy: false
     });
     gsap.from(circleRed.current, {
       translateY: 350,
@@ -62,7 +65,8 @@ const Banner = () => {
         trigger: banner.current,
         start: 150,
         scrub: true
-      }
+      },
+      lazy: false
     });
 
     gsap.from(heartIcon.current, {
@@ -70,7 +74,8 @@ const Banner = () => {
       delay: 0.5,
       scrollTrigger: {
         trigger: heartIcon.current
-      }
+      },
+      lazy: false
     });
   }, []);
 

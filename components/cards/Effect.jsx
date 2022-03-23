@@ -13,7 +13,8 @@ const Effect = ({icons, image, align}) => {
       stagger: 0.1,
       scrollTrigger: {
         trigger: iconsRef.current
-      }
+      },
+      lazy: false
     }).duration(0.5);
 
     gsap.from(imageRef.current, {
@@ -24,7 +25,7 @@ const Effect = ({icons, image, align}) => {
       },
       lazy: false
     });
- }, [imageRef, iconsRef]);
+ }, []);
 
   return <div className={`${styles.card} ${styles[align]}`}>
     <img ref={imageRef} src={`/images/${image}`} alt="" />

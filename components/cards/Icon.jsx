@@ -11,7 +11,8 @@ const Icon = ({ icon, text }) => {
       delay: 0.2,
       scrollTrigger: {
         trigger: card.current
-      }
+      },
+      lazy: false
     }).duration(0.5);
   });
   return (
