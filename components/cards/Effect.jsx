@@ -18,9 +18,11 @@ const Effect = ({icons, image, align}) => {
 
     gsap.from(imageRef.current, {
       scale: 0,
+      opacity: 0, 
       scrollTrigger: {
         trigger: imageRef.current
-      }
+      },
+      lazy: false
     });
  }, [imageRef, iconsRef]);
 
