@@ -23,7 +23,7 @@ const Effect = ({icons, image, align}) => {
         trigger: imageRef.current
       }
     });
- }, []);
+ }, [imageRef, iconsRef]);
 
   return <div className={`${styles.card} ${styles[align]}`}>
     <img ref={imageRef} src={`/images/${image}`} alt="" />
