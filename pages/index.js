@@ -9,9 +9,9 @@ const IndexPage = () => {
       <Effects />
       <Products />
       <Collection />
-      {/*<Reviews />
+      <Reviews />
       <Ratings />
-      <Brands />
+      {/*<Brands />
       <Love /> */}
       <Footer />
     </div>

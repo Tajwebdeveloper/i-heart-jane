@@ -1,0 +1,19 @@
+.footer{
+  padding:40px 24px 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.footerShadow{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(15%);
+  left: 0;
+}
+.footerShadow svg{
+  width: 100%;
+}

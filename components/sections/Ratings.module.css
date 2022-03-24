@@ -1,0 +1,19 @@
+.section{
+  padding: 40px 24px;
+  background-image: url("data:image/svg+xml,%3Csvg width='375' height='451' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-39 107h475M-39 311h475M-22 1l449 449' stroke='%23DADADA' stroke-width='2'/%3E%3C/svg%3E");
+background-repeat: no-repeat no-repeat;
+background-position: center center;
+background-color: #F7F7F7;
+}
+.subheading{
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 40px;
+  display: none;
+}
+.cta{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
