@@ -13,6 +13,7 @@
   bottom: 0;
   transform: translateY(15%);
   left: 0;
+  width: 100%;
 }
 .footerShadow svg{
   width: 100%;

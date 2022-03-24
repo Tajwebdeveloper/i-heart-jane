@@ -16,7 +16,7 @@ const Location = ({image, icon, title, content, rating}) => {
           lazy: false,
         }
       });
- }, []);
+ }, [iconRef]);
   return (
     <div className={styles.container} ref={containerRef}>
       <div >
