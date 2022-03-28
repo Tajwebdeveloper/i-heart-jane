@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect,useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./Icon.module.css";
@@ -24,6 +24,7 @@ const Icon = ({ icon, text }) => {
       ScrollTrigger.refresh()
     }, 500)
   },[])
+
   return (
     <div ref={card} className={styles.card}>
       <div className={styles.icon}>
