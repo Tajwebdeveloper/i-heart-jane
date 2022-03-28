@@ -20,6 +20,7 @@ const Icon = ({ icon, text }) => {
 
   useEffect(()=>{
     setTimeout(()=>{
+      console.log("d")
       ScrollTrigger.refresh()
     }, 500)
   },[])
