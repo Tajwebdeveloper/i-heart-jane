@@ -1,11 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./Icon.module.css";
 gsap.registerPlugin(ScrollTrigger);
 const Icon = ({ icon, text }) => {
   const card = useRef(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.from(card.current, {
       scale: 0,
       delay: 0.2,
