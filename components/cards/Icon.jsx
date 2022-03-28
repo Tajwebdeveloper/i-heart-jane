@@ -2,7 +2,6 @@ import { useLayoutEffect,useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./Icon.module.css";
-import { useEffect } from "react/cjs/react.development";
 gsap.registerPlugin(ScrollTrigger);
 
 const Icon = ({ icon, text }) => {
