@@ -3,6 +3,7 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./Icon.module.css";
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.refresh()
 const Icon = ({ icon, text }) => {
   const card = useRef(null);
   useLayoutEffect(() => {
