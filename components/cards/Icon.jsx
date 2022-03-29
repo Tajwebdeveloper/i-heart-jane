@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Icon = ({ icon, text }) => {
   const card = useRef(null);
-  useLayoutEffect(() => {
+  useEffect(() => {
     
     gsap.from(card.current, {
       scale: 0,
