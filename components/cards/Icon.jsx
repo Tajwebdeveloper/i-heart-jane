@@ -8,7 +8,7 @@ const Icon = ({ icon, text }) => {
   const card = useRef(null);
   useEffect(() => {
     
-    gsap.from(card.current, {
+    const anim = gsap.from(card.current, {
       scale: 0,
       delay: 0.2,
       scrollTrigger: {
@@ -16,14 +16,13 @@ const Icon = ({ icon, text }) => {
       },
       lazy: false
     }).duration(0.5);
+    return () => {
+      anim.kill()
+      ScrollTrigger.refresh();
+    }
   },[]);
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      console.log("d")
-      ScrollTrigger.refresh()
-    }, 500)
-  },[])
+
 
   return (
     <div ref={card} className={styles.card}>
