@@ -3,11 +3,11 @@ module.exports = {
   async headers() {
   return [
     {
-      source: '/:all*(svg|jpg|png)',
+      source: '/:all',
       headers: [
         {
           key: 'Cache-Control',
-          value: 'public, max-age=-1, must-revalidate',
+          value: 'no-cache',
         }
       ],
     },
