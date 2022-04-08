@@ -1,5 +1,5 @@
 .footer{
-  padding:40px 24px 400px;
+  padding:40px 24px 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +15,24 @@
   left: 0;
   width: 100%;
 }
-.footerShadow svg{
+.footerShadow div{
   width: 100%;
+  margin-bottom: -45% !important;
+}
+
+@media (min-width: 992px){
+  .footer{
+    background: #FFC220;
+    padding-bottom: 0;
+  }
+  .footerShadow{
+    position: static;
+    transform: none;
+    margin-bottom: -15%;
+  }
+  .footerShadow > div{
+    height: auto !important;
+    width: 110% !important;
+    margin: 0 -5% -45% -5% !important;
+  }
 }

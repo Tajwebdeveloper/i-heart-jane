@@ -1,3 +1,12 @@
 .features{
   padding:24px;
 }
+@media(min-width: 992px){
+  .features{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap:72px;
+    margin:auto;
+  }
+}

@@ -1,19 +1,54 @@
+import { useRef, useEffect } from "react";
 import Heading from "../Heading";
 import styles from "./Footer.module.css"
 import Button from "../Button";
+import Lottie from 'react-lottie';
+import animationData from '../lotties/footer';
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
+  const iconRef = useRef(null)
+  const buttonRef = useRef(null)
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+  useEffect(()=>{
+    gsap.from(iconRef.current, {
+      scale: 0,
+      scrollTrigger: {
+        trigger: iconRef.current
+      },
+      lazy: false
+    });
+    gsap.from(buttonRef.current, {
+      scale: 0,
+      y: -50,
+      scrollTrigger: {
+        trigger: buttonRef.current
+      },
+      lazy: false
+    });
+  },[])
   return <footer className={styles.footer}>
     <Heading text="Jane for iOS" />
-    <div><img src="/icons/big-logo.svg" width={128} alt="I heart Jane" /></div>
-    <div><Button text="Download Now" link="/" type="secondary"/></div>
+    <div><img src="/icons/big-logo.svg" ref={iconRef} width={128} alt="I heart Jane" /></div>
+    <div ref={buttonRef}><Button text="Download Now" link="/"/></div>
+    
     <div className={styles.footerShadow}>
-      <svg width="375" height="348" viewBox="0 0 375 348" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="188" cy="300" r="300" fill="#FFC220"/>
-        <circle cx="188" cy="300" r="240" fill="#FF9900"/>
-        <circle cx="188" cy="300" r="180" fill="#FF5500"/>
-        <circle cx="188" cy="300" r="120" fill="#CE349A"/>
-        <circle cx="188" cy="300" r="60" fill="#8E00E6"/>
-      </svg>
+    <Lottie 
+	    options={defaultOptions}
+        height="100%"
+        width="100%"
+        className={styles.lottie}
+      />
+
      </div>
   </footer>;
 };

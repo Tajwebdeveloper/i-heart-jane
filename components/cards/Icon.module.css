@@ -14,3 +14,12 @@
   letter-spacing: -0.03em;
   margin-top: 18px;
 }
+@media (min-width:991px){
+  .text{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .card{
+    padding: 24px 16px;
+  }
+}

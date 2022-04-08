@@ -1,8 +1,15 @@
 .container{
   position: relative;
-  text-align: center;
   margin: 120px auto 0;
   width: 36px;
+}
+.left{
+margin-right: auto;
+margin-left: 0;
+}
+.right{
+  margin-left: auto;
+  margin-right: 0;
 }
 .card{
   position: absolute;
@@ -12,11 +19,28 @@
   background-color: #fff;
   overflow: hidden;
   display: flex;
-  width: 72px;
-  height: 72px;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0)  translateX(-50%);
+  left: calc(50% - 107px);
+}
+
+.icon{
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: calc(50% - 36px);
+  opacity: 0;
+  transform: scale(0) translateX(-50%);
+  display: flex;
   justify-content: center;
   align-items: center;
-  right: calc(50% - 36px);
+  width: 72px;
+  height: 72px;
+  border-radius: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 .card_content{
   padding: 16px;

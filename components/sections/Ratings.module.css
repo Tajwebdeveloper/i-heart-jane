@@ -17,3 +17,16 @@ background-color: #F7F7F7;
   justify-content: center;
   margin-top: 40px;
 }
+.card_container{
+  padding: 0 90px;
+}
+@media (min-width:992px){
+  .section{
+    background-size: 900px;
+    padding: 160px 24px;
+  }
+  .container{
+    max-width: 1120px;
+    margin:auto;
+  }
+}

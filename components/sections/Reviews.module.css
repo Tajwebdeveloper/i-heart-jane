@@ -1,9 +1,31 @@
 .section{
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
 }
 .subheading{
   text-align: center;
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 40px;
+  font-family: var(--font-primary);
+}
+.container{
+  background-image: url("/images/stars.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image{
+  display: none;
+}
+@media(min-width:992px){
+  .container{
+    max-width: 1020px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 140px;
+  }
+  .image{
+    display: block;
+    position: absolute;
+    bottom:-140px;
+  }
 }

@@ -16,3 +16,15 @@
 .secondary span{
   color: white;
 }
+.white{
+  color: white;
+}
+@media (min-width: 992px){
+  .heading{
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .left{
+    text-align: left;
+  }
+}

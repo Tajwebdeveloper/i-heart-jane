@@ -17,3 +17,31 @@
   justify-content: center;
   opacity: 0;
 }
+.logoText{
+  display: none;
+}
+@media (min-width: 992px){
+  .nav{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+  .nav__right{
+    opacity: 1;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  .logoText{
+    display: inline;
+    font-size: 54px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #0E0E0E;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+}

@@ -3,6 +3,9 @@
   border-radius: 24px;
   width: 156px;
   overflow: hidden;
+  font-family: var(--font-primary);
+  overflow: hidden;
+  background: white;
 }
 .card img{
   width: 100%;
