@@ -370,3 +370,8 @@ body {
 .swiper-button-next{
   right: 50px;
 }
+@media (max-width:991px) {
+  .swiper-button-prev,.swiper-button-next{
+    display: none
+  }
+}

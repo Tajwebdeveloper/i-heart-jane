@@ -51,6 +51,14 @@ margin-left: 0;
   width: 212px;
 }
 
+@media (max-width: 991px){
+  .first, .second, .third, .fourth{
+    position: relative;
+  }
+  .fifth, .sixth, .seventh, .eighth{
+    display: none;
+  }
+}
 @media (min-width: 992px){
   .card{
     left: calc(50% - 155px);

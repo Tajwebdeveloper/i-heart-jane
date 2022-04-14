@@ -50,8 +50,17 @@
   padding-top: 24px;
   padding-bottom: 80px;
 }
+.bgContainer{
+   max-width:1790px;
+   margin: auto;
+   background-blend-mode: multiply;
+   transition: all 0.5s ease-out;
+   background-size: cover;
+}
 @media (min-width:992px) {
-  
+  .bgContainer{
+    border-radius: 40px; 
+  }
   .buttonContainer{
     overflow: hidden;
     min-height: 320px;
