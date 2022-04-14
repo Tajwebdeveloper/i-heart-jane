@@ -12,5 +12,35 @@
 }
 
 @media(min-width:992px){
-  
+  .first img{
+    width: 120px;
+    height: auto;
+  }
+  .second img{
+    width: 72px;
+    height: auto;
+  }
+  .third img{
+    width: 96px;
+    height: auto;
+  }
+  .fourth{
+    inset:-42px auto auto -96px
+  }
+  .fourth img{
+    width: 282px;
+    height: auto;
+  }
+  .fifth img{
+    width: 72px;
+    height: auto;
+  }
+  .sixth img{
+    width: 120px;
+    height: auto;
+  }
+  .seventh img{
+    width: 96px;
+    height: auto;
+  }
 }

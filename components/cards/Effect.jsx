@@ -33,7 +33,7 @@ const Effect = ({icons, image, align, desktopImage}) => {
         <source srcSet={`/images/${desktopImage}`} />
         <img ref={imageRef} src={`/images/${image}`} alt="" />
       </picture>
-    {icons.map((icon, i) => <div className={styles.icon} style={{top: icon.position[0], right: icon.position[1], bottom: icon.position[2],left: icon.position[3] }} ref={el => iconsRef.current[i] = el} key={icon.name}><img src={`/icons/${icon.name}.svg`} alt="" /></div>)}
+    {icons.map((icon, i) => <div className={`${styles.icon} ${styles[icon.dektopIcon]}`} style={{top: icon.position[0], right: icon.position[1], bottom: icon.position[2],left: icon.position[3] }} ref={el => iconsRef.current[i] = el} key={icon.name}><img src={`/icons/${icon.name}.svg`} alt="" /></div>)}
   </div>
 };
 export default Effect;

@@ -39,15 +39,7 @@ const Header = () => {
 
     ScrollTrigger.matchMedia({
       "(min-width: 992px)" : () =>{
-        gsap
-        .from(innerHeaderButton.current, {
-          scale: 0,
-          delay: 0.5,
-          scrollTrigger: {
-            trigger: innerHeaderButton.current,
-            lazy: false
-          }
-        })
+        
         gsap
         .from(headerButton.current, {
           scrollTrigger: {
