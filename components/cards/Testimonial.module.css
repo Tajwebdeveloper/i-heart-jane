@@ -1,6 +1,7 @@
 .card{
   margin-top: 104px;
   font-family: var(--font-primary);
+  position: relative;
 }
 
 .content{
@@ -10,7 +11,7 @@
 
 }
 .right .image{
-  right: -47px;
+  right: 0px;
 }
 .right .content{
   border-radius:  24px 0px 24px 24px;
@@ -19,7 +20,7 @@
 }
 
 .left .image{
- left: -47px;
+ left: 0px;
  
 }
 .image{
@@ -80,7 +81,7 @@
     box-shadow: 0 0 0 261px #FFC220;
     border-radius: 50%;
     bottom: -200px;
-    right: -140px;
+    right: -50px;
     top: auto;
   }
   .card.right{
@@ -106,10 +107,10 @@
   .left.card .image{
     top: auto;
     bottom: -130px;
-    left: -120px;
+    left: -50px;
   }
   .card.small .image{
     bottom: -96px;
-    left: -80px;
+    left: -40px;
   }
 }

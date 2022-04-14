@@ -9,23 +9,36 @@ const Testimonial = ({text, image, rating, icon, feeling, align, desktopImage, d
   useEffect(()=>{
     gsap.from(cardRef.current, {
       scale: 0,
-      transformOrigin: align === "right" ? "top right" : "top left",
+      delay: 0.6,
+      transformOrigin: align === "right" ? "bottom right" : "bottom left",
       scrollTrigger: {
         trigger: cardRef.current,
         start: "start 90%"
       },
       lazy: false
-    }).duration(0.8);
+    }).duration(0.5);
+
+    gsap.from(imageRef.current, {
+      scale: 0,
+      delay: 0.1,
+      transformOrigin: align === "right" ? "bottom right" : "bottom left",
+      scrollTrigger: {
+        trigger: cardRef.current,
+        start: "start 90%"
+      },
+      lazy: false
+    }).duration(0.5);
   },[cardRef])
 
   return (
-    <div ref={cardRef} className={`${styles.card} ${styles[align]} ${styles[desktopSize]}`}>
-      <div className={styles.content}>
-      <picture>
+    <div  className={`${styles.card}  ${styles[align]} ${styles[desktopSize]}`}>
+      <picture >
         <source srcSet={`/images/${image}`} media="(max-width: 991px)" />
         <source srcSet={`/images/${desktopImage}`} />
         <img ref={imageRef} className={styles.image} src={`/images/${image}`} alt="" />
       </picture>
+      <div className={styles.content} ref={cardRef} >
+      
         <div className={styles.rating}>
           <img src="/icons/star.svg" width={16} alt="" />
           <img src="/icons/star.svg" width={16} alt="" />

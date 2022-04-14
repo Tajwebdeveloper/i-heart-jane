@@ -1,11 +1,12 @@
 .button {
   display: inline-flex;
   font-weight: bold;
-  
+  font-size: 1rem;
   border-radius: 999px;
   padding: 16px 32px;
   line-height: 1;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 .primary{
   color: white;
@@ -18,4 +19,11 @@
 .white{
   background-color: white;
   color: #5e1ff0;
+}
+
+@media (min-width:992px) {
+  .desktop_secondary{
+    background-color: white;
+  color: #5e1ff0;
+  }
 }

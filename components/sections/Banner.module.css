@@ -10,6 +10,7 @@
   width: 80%;
   margin: auto;
 }
+
 .banner__content {
   padding: 24px 24px 0;
 }
@@ -60,8 +61,10 @@
   margin-top: -50px;
 }
 .banner__image video{
-  border:16px solid #f9f9f9;
+  box-shadow:0 0 0 16px #f9f9f9;
   border-radius: 24px;
+  background-color: #f9f9f9;
+  max-width: 90%;
 }
 @media (min-width:992px){
   /* .banner{
@@ -72,8 +75,9 @@
    
   }
   .banner__image video {
-    max-height: 90vh;
+    max-height: 86vh;
     width: auto;
+    max-width: initial;
   }
   .row{
     display: flex;
@@ -121,7 +125,7 @@
     margin-top: -250px;
   }
   .row{
-    max-width: 1040px;
+    max-width: 1140px;
     margin: auto;
   }
 }

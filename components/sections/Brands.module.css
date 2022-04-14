@@ -39,7 +39,7 @@ font-family: var(--font-primary);
     z-index: 1;
     padding-bottom: 200px;
   }
-  .grid div:first-child{
+  .grid > div:first-child{
     width: 100%;
   }
   .subheading{

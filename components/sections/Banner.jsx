@@ -70,7 +70,7 @@ const Banner = () => {
           scrollTrigger: {
             trigger: bannerImage.current,
             scrub: true,
-            start: "top 90px",
+            start: "top 100px",
             pin: true
           },
           lazy: false
@@ -80,7 +80,7 @@ const Banner = () => {
           scrollTrigger: {
             trigger: bannerImage.current,
             scrub: true,
-            start: "top 90px",
+            start: "top 100px",
             pin: true
           },
           lazy: false
@@ -90,7 +90,7 @@ const Banner = () => {
           scrollTrigger: {
             trigger: bannerImage.current,
             scrub: true,
-            start: "top 90px",
+            start: "top 100px",
             pin: true
           },
           lazy: false
@@ -99,7 +99,7 @@ const Banner = () => {
           scrollTrigger: {
             trigger: bannerImage.current,
             scrub: true,
-            start: "top 90px",
+            start: "top 100px",
             pin: true
           },
           lazy: false
@@ -118,10 +118,10 @@ const Banner = () => {
           <h1>
             Jane for iOS <strong>Shop &amp; discover cannabis</strong>
           </h1>
-          <Button text="Get the app" link="/" />
+          <Button text="Get the app" link="/" desktop="desktop_secondary" />
         </div>
         <div className={styles.banner__image}>
-          <video ref={bannerImage} loop="true" autoplay="autoplay"  muted>
+          <video ref={bannerImage} loop="true" autoplay="autoplay"  muted poster="/images/iphone.png">
             <source src="/videos/banner.mp4" type="video/mp4" /> 
           </video>
         </div>

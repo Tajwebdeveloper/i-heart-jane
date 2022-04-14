@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-const Location = ({image, icon, title, content, rating, align="left"}) => {
+const Location = ({image, icon, title, content, rating, align="left", position}) => {
   const cardRef = useRef(null)
   const containerRef = useRef(null)
   const iconRef = useRef(null)
@@ -15,10 +15,7 @@ const Location = ({image, icon, title, content, rating, align="left"}) => {
         transformOrigin: "bottom center",
         scrollTrigger: {
           trigger: iconRef.current,
-          lazy: false,
-          start: "start 90%",
-          end: "end 80%",
-          toggleActions: "play reverse play reverse"
+          lazy: false
         }
       });
 
@@ -29,25 +26,22 @@ const Location = ({image, icon, title, content, rating, align="left"}) => {
         transformOrigin: "bottom center",
         scrollTrigger: {
           trigger: iconRef.current,
-          lazy: false,
-          start: "end 80%",
-          end: "end 65%",
-          toggleActions: "play none play reverse"
+          lazy: false
         }
       });
  }, [iconRef]);
   return (
-    <div className={`${styles.container} ${styles[align]}`} ref={containerRef}>
+    <div className={`${styles.container} ${styles[align]} ${styles[position]}`} ref={containerRef}>
       <div>
-        <div ref={cardRef} className={`${styles.card}`}>
+        {image ? <div ref={cardRef} className={`${styles.card}`}>
           <img className={styles.image} src={`/images/${image}`} alt="" />
           <div className={styles.card_content}>
-            <div>{title}</div>
-            <div>{rating}</div>
-            <div>{content}</div>
+            <div className={styles.card_title}>{title}</div>
+            <div className={styles.card_rating}><img src="/icons/star.svg" alt="" /><img src="/icons/star.svg" alt="" /><img src="/icons/star.svg" alt="" /><img src="/icons/star.svg" alt="" /><img src="/icons/star.svg" alt="" />{rating}</div>
+            <div className={styles.card_text}>{content}</div>
           </div>
-        </div>
-        <div ref={iconRef} className={styles.icon}><img src={`/icons/${icon}.svg`} alt="" /></div>
+        </div> :  <div ref={iconRef} className={styles.icon}><img src={`/icons/${icon}.svg`} alt="" /></div>}
+        
       </div>
       <div className={styles.location}><img src="/icons/pin.svg" alt="" /></div>
     </div>

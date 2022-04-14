@@ -33,7 +33,7 @@ const Collection = () => {
   return (
     <section className={styles.collection}>
       <Heading text={<>Shop <span>collections</span></>} type="primary" />
-      <div style={{ backgroundColor: background, backgroundBlendMode: "multiply", transition: "all 0.5s ease-out", backgroundSize: "cover"}}>
+      <div style={{ backgroundColor: background, maxWidth:1790, margin: "auto", borderRadius: 40, backgroundBlendMode: "multiply", transition: "all 0.5s ease-out", backgroundSize: "cover"}}>
         <div className={styles.buttonContainer}>    
           {categoryData.map((category) => {
             return <button 
