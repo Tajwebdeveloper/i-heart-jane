@@ -24,6 +24,7 @@ const Products = () => {
     playRowAnim(productRow6.current, true)
     playRowAnim(productRow7.current)
   },[productRow, productRow2, productRow3, productRow4, productRow5, productRow6, productRow7])
+  const imagesArray = ["710-gummies.png","3bros-flower.png","3bros-smalls.png", "710-flower.png", "alienlabs-flower.png", "almora-flower.png","Artet.jpeg.webp", "avitas-pax.png", "biscotti-joint.png", "Bloom.png.webp", "Breez.jpeg.webp", "Care.jpeg.webp", "brotherdavid-joint.png", "camino-gummies.png", "Cannabisquencher.jpeg.webp", "Canndescent.jpg.webp", "ceres-tincture.png", "ea-cream.png", "ecc-caps.png", "Emerald.jpeg.webp", "Flower-1.jpeg.webp", "Flower-2.jpeg.webp", "Flower-3.jpeg.webp", "Flower-4.jpeg.webp", "Flower-5.jpeg.webp", "Flower-6.jpeg.webp", "Flower-7.jpeg.webp", "Flower-8.jpeg.webp",  "Flower-9.jpeg.webp", "fluent-gummies.png", "Garden.jpeg.webp", "Good.jpeg.webp", "GR-tincture.png", "Heavyhitters.jpeg.webp", "Highgrade.jpg.webp", "Houseplace.jpeg.webp", "Houseplant-2.jpeg.webp"]
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 992px)": () => {
@@ -37,39 +38,18 @@ const Products = () => {
       }
     })
   }, []);
+  const getRandom = (array) => {
+    return array[Math.floor(Math.random() * array.length)];
+  }
   return <section className={styles.section}>
     <div className={styles.product__scroll}>
       <div ref={productRow} className={styles.product__row}>
-        <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+         { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
       </div>
   </div>
   <div className={styles.product__scroll}>
       <div ref={productRow2} className={styles.product__row}>
-      <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+      { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
       </div>
   </div>
   <div className={styles.heading} ref={contentRef}>
@@ -80,89 +60,34 @@ const Products = () => {
   </div>
   <div className={styles.product__scroll}>
       <div ref={productRow3} className={styles.product__row}>
-      <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+      { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
+
       </div>
   </div>
   <div className={styles.product__scroll}>
       <div ref={productRow4} className={styles.product__row}>
-      <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+      { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
+
       </div>
   </div>
 
   <div className={styles.hideOnMobile}>
   <div className={styles.product__scroll}>
       <div ref={productRow5} className={styles.product__row}>
-      <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+      { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
+
       </div>
   </div>
   <div className={styles.product__scroll}>
       <div ref={productRow6} className={styles.product__row}>
-      <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+      { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
+
       </div>
   </div>
   <div className={styles.product__scroll}>
       <div ref={productRow7} className={styles.product__row}>
-      <img src="/images/product-1.png" alt="" />
-        <img src="/images/product-2.png" alt="" />
-        <img src="/images/product-3.png" alt="" />
-        <img src="/images/product-4.png" alt="" />
-        <img src="/images/product-5.png" alt="" />
-        <img src="/images/product-6.png" alt="" />
-        <img src="/images/product-7.png" alt="" />
-        <img src="/images/product-8.png" alt="" />
-        <img src="/images/product-9.png" alt="" />
-        <img src="/images/product-10.png" alt="" />
-        <img src="/images/product-11.png" alt="" />
-        <img src="/images/product-12.png" alt="" />
-        <img src="/images/product-13.png" alt="" />
+      { [...Array(12)].map(() => <img src={`/images/${getRandom(imagesArray)}`} alt="" />) }
+
       </div>
   </div>
   </div>

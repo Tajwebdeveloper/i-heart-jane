@@ -11,6 +11,7 @@
   flex-shrink: 0;
   width: 156px;
   height: 156px;
+  border-radius: 24px;
 }
 .heading{
   background-color: #8E00E6;
