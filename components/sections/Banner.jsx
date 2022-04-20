@@ -121,9 +121,12 @@ const Banner = () => {
           <Button text="Get the app" link="/" desktop="desktop_secondary" />
         </div>
         <div className={styles.banner__image}>
-          <video ref={bannerImage} loop="true" autoplay="autoplay"  muted poster="/images/iphone.png">
+        <video loop="true" autoplay="autoplay"  ref={bannerImage}  muted width="100%" height="100%" >
+          <source src="https://cdn-cf-east.streamable.com/video/mp4/f5fqd3.mp4?Expires=1650708000&Signature=hZBBf4gm2HCft7rUj4UVRMzauQSjXPOK2QPRt4bniJMztlTs3agPyhTDzHaHOq36Dr7mqHkFbSKfDMwz8~73CwXr~lU0SxeWrLTxewTkXStCuu9k9xsxgibyModGfZkvx~fZFcJ7bg2RPFRglhRDdugRDCJmfhHxAXgkkzK7THP6wPynARBJjT0VG7og7mjstjxeODnxsdqyQaRzCmd821b8FmlnWIewbbD5TXnaqZVCoTNTiXf5uCejp0Q7ibQjKwoaTxqnhIR6eudz0Y0UWRzyydbWhCIlPj578rehx5GUG40GorS96BEshWndQ~cP~A3rt0VEyxZa-lzBIBqMNg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ" type="video/mp4" /> 
+        </video>
+          {/* <video ref={bannerImage} loop="true" autoplay="autoplay"  muted poster="/images/iphone.png">
             <source src="/videos/banner.mp4" type="video/mp4" /> 
-          </video>
+          </video> */}
         </div>
       </div>
       <div
